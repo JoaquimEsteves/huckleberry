@@ -10,3 +10,92 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  /* Spacing 🌌*/
+  --s-tiny: 8px;
+  --s-small: 16px;
+  --s-medium: 32px;
+  --s-big: 48px;
+  --s-huge: 64px;
+  --s-titanic: 96px;
+  --s-biggest: 128px;
+  /* Font 🖋️ */
+  --f-small: 1rem;
+  --f-medium: 1.25rem;
+  --f-big: 1.5rem;
+  --f-biggest: 2rem;
+  /* Pallete 🎨 */
+
+  /* Primary (green): */
+  --c-primary: hsl(160deg, 100%, 30%);
+  /* Secondary (gold): */
+  --c-light-gold: hsl(45deg, 100%, 50%);
+  --c-dark-gold: hsl(45deg, 100%, 40%);
+
+  /* Grays: */
+  --c-black: hsl(0deg, 0%, 0%);
+  --c-very-dark: hsl(0deg, 0%, 10%);
+  --c-dark: hsl(0deg, 0%, 30%);
+  --c-medium: hsl(0deg, 0%, 40%);
+  --c-light: hsl(0deg, 0%, 60%);
+  --c-white: hsl(0deg, 0%, 100%);
+}
+
+body {
+  background-color: var(--c-light);
+}
+
+header {
+  font-size: var(--f-big);
+
+  border-bottom: var(--s-tiny) solid var(--c-dark);
+  background-color: var(--c-white);
+
+  padding: var(--s-medium) var(--s-biggest);
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+header h1,
+header p {
+  padding: 0 var(--s-biggest);
+}
+
+section {
+  padding: var(--s-biggest);
+}
+
+.card {
+  background-color: var(--c-white);
+  margin: 0 var(--s-huge);
+  padding-top: var(--s-tiny);
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-bottom: var(--s-tiny) solid var(--c-medium);
+}
+
+.card h2,
+.card p {
+  padding: var(--s-small) var(--s-big);
+  line-height: 1.2;
+  font-size: var(--f-big);
+  margin-bottom: calc(var(--s-small) * -1);
+}
+
+.card h2 {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  /* Yeah yeah I shouldn't use calc.
+  * But I'm committed to only using the variables now
+  */
+  margin-left: calc(var(--s-small) * -1);
+  padding-left: calc(var(--s-big) + var(--s-small));
+
+  background-color: var(--c-light-gold);
+  border-bottom: var(--s-tiny) solid var(--c-dark-gold);
+}
+
+strong {
+  color: var(--c-primary);
+}
