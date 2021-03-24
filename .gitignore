@@ -1,3 +1,6 @@
+# Editor shenanigans
+.vscode
+
 .cache
 dist
 .DS_Store
