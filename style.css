@@ -70,6 +70,7 @@ section {
   background-color: var(--c-white);
   margin: 0 var(--s-huge);
   padding-top: var(--s-tiny);
+  padding-bottom: var(--s-big);
   min-width: -moz-fit-content;
   min-width: fit-content;
   border-bottom: var(--s-tiny) solid var(--c-medium);
